@@ -7,6 +7,11 @@ public class dddd {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("What is your name? ");
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Hello," + scan.nextLine() + "!");
 
 		System.out.println("Rolling the dice...");
 		
@@ -19,11 +24,12 @@ public class dddd {
 		}
 		System.out.println("Total value:" + a);
 		
-		System.out.println("What is your name? ");
+		if(a > 7) {
+			System.out.println(scan.nextLine() + "won");
+		} else {
+			System.out.println(scan.nextLine() + "lost");
+		}
 		
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("Hello," + scan.nextLine() + "!");
 	}
 
 }
