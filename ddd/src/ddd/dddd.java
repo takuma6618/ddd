@@ -1,6 +1,7 @@
 package ddd;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class dddd {
 
@@ -17,6 +18,12 @@ public class dddd {
 			a += 1+rana;
 		}
 		System.out.println("Total value:" + a);
+		
+		System.out.println("What is your name? ");
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Hello," + scan.nextLine() + "!");
 	}
 
 }
